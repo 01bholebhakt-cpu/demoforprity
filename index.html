@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prity's Makeover Salon | Luxury Bridal Studio Katihar</title>
+    <meta name="description" content="Katihar's premier luxury beauty parlour located at Durgasthan. Specializing in Bridal Makeup, Party Glam, and Skin Care.">
+    
+    <!-- Tailwind CSS (Styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Playfair Display for Luxury, Lato for Text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config for Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            maroon: '#800000',
+                            cream: '#FFFDD0',
+                            dark: '#1A1A1A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            /* Placeholder Image - Replace with a photo of a bride from your salon */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1595959183082-7bce70848ddb?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans bg-stone-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-bold text-brand-maroon tracking-wider">
+                        PRITY'S <span class="text-brand-gold text-lg">MAKEOVER</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-brand-maroon transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-maroon transition">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-brand-maroon transition">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-brand-maroon transition">Portfolio</a>
+                    <a href="https://wa.me/6207344063?text=Hi%20Prity's,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="bg-brand-maroon text-white px-5 py-2 rounded-full hover:bg-red-900 transition shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-maroon focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#home" class="block py-3 px-4 text-gray-700 hover:bg-gray-50">Home</a>
+            <a href="#about" class="block py-3 px-4 text-gray-700 hover:bg-gray-50">About</a>
+            <a href="#services" class="block py-3 px-4 text-gray-700 hover:bg-gray-50">Services</a>
+            <a href="https://wa.me/6207344063" class="block py-3 px-4 text-brand-maroon font-bold">Book Appointment</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="text-white max-w-3xl animate-fade-in-up">
+            <p class="text-brand-gold font-serif italic text-xl mb-4">Welcome to Katihar's Finest</p>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
+                Reveal Your Inner Queen
+            </h1>
+            <p class="text-lg md:text-xl mb-8 font-light text-gray-200">
+                Luxury Bridal & Party Makeup Studio at Durgasthan, Katihar.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:6207344063" class="bg-brand-gold text-brand-dark px-8 py-3 rounded hover:bg-yellow-500 transition font-semibold">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Us
+                </a>
+                <a href="#portfolio" class="border border-white text-white px-8 py-3 rounded hover:bg-white hover:text-brand-dark transition font-semibold">
+                    View Gallery
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-cream">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-maroon z-0"></div>
+                <!-- Replace with Salon Interior Photo -->
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop" alt="Prity's Beauty Parlour Interior" class="relative z-10 shadow-xl w-full">
+            </div>
+            <div>
+                <h2 class="text-brand-maroon font-serif text-4xl mb-6">About Prity's Makeover</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Located in the heart of Katihar at <strong>Durgasthan, 1 No Colony</strong>, we define luxury in beauty. Whether you are a bride-to-be looking for that perfect royal look or getting ready for a party, our expert artists ensure you leave feeling confident and beautiful.
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-brand-gold mr-3"></i> Premium International Products</li>
+                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-brand-gold mr-3"></i> Certified Bridal Experts</li>
+                    <li class="flex items-center text-gray-700"><i class="fas fa-check text-brand-gold mr-3"></i> Hygienic & Luxury Ambiance</li>
+                </ul>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/smily.prity.90/" target="_blank" class="text-brand-maroon text-2xl hover:scale-110 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/pritys_makeover_salon/" target="_blank" class="text-brand-maroon text-2xl hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-brand-maroon font-serif text-4xl mb-2">Our Services</h2>
+            <p class="text-gray-500 mb-12">Curated beauty treatments for your special moments</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 border border-gray-100 hover:shadow-xl transition rounded-lg group">
+                    <div class="text-4xl text-brand-gold mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Bridal Makeup</h3>
+                    <p class="text-gray-500 text-sm">HD & Airbrush Bridal Makeup, Haldi & Mehendi Looks.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 border border-gray-100 hover:shadow-xl transition rounded-lg group">
+                    <div class="text-4xl text-brand-gold mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Party Glam</h3>
+                    <p class="text-gray-500 text-sm">Reception Makeup, Guest Looks, and Saree Draping.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 border border-gray-100 hover:shadow-xl transition rounded-lg group">
+                    <div class="text-4xl text-brand-gold mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Skin & Hair</h3>
+                    <p class="text-gray-500 text-sm">Facials, Keratin, Smoothening, and Hair Spa.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="p-8 border border-gray-100 hover:shadow-xl transition rounded-lg group">
+                    <div class="text-4xl text-brand-gold mb-4 group-hover:scale-110 transition duration-300">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-3">Nail Art</h3>
+                    <p class="text-gray-500 text-sm">Gel Extensions, Acrylics, and Customized Art.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section id="portfolio" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-brand-maroon font-serif text-4xl mb-12">Follow Us on Instagram</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Placeholders: In a real deployment, replace 'src' with your actual bridal photos -->
+                <a href="https://www.instagram.com/pritys_makeover_salon/" target="_blank" class="block overflow-hidden rounded-lg relative group">
+                    <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=800&auto=format&fit=crop" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center
